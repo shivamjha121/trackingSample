@@ -9,7 +9,7 @@
     "build": "webpack --mode production ",
     "deploy": "gh-pages -d dist" 
   },
-  
+  "homepage": " https://github.com/shivamjha121/trackingSample.git",
   "keywords": [],
   "author": "",
   "license": "ISC",
