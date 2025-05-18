@@ -29,6 +29,7 @@
     { id: "4", name: "Tech Store", location: { lat: 36.1745 + Math.random() * 0.05, lng: -115.1378 + Math.random() * 0.05 } },
   ];
 
+  
   const optimizedRouteList = document.getElementById("optimized-route");
   const findRouteBtn = document.getElementById("find-route-btn");
 
