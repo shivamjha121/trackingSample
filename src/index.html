@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map App</title>
+    <!-- MapLibre GL JS CSS -->
+    <link
+      href="https://unpkg.com/maplibre-gl@3.2.1/dist/maplibre-gl.css"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: sans-serif;
+      }
+
+      header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+        width: 100%;
+      }
+
+      #map {
+        width: 100%;
+        height: 92vh;
+      }
+
+      #right-panel {
+        width: 20%;
+        padding: 20px;
+        background-color: #f4f4f4;
+        position: absolute;
+        top: 80px;
+        left: 0;
+      }
+
+      #optimized-route {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .route-item {
+        padding: 10px;
+        background-color: #fff;
+        margin-bottom: 5px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+
+      .route-item:hover {
+        background-color: #f0f0f0;
+      }
+
+      #find-route-btn {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #27ae60;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      #find-route-btn:hover {
+        background-color: #2ecc71;
+      }
+    </style>
+  </head>
+  <body>
+    <header>My Map App</header>
+
+    <div id="map"></div>
+
+    <div id="right-panel">
+      <h3>Optimized Route</h3>
+      <ul id="optimized-route"></ul>
+      <button id="find-route-btn">Find Optimized Route</button>
+    </div>
+
+    <!-- MapLibre GL JS -->
+    <script src="https://unpkg.com/maplibre-gl@3.2.1/dist/maplibre-gl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@7/turf.min.js"></script>
+
+    <script src="script.js"></script>
+  
+</body>
+</html>
